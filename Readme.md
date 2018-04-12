@@ -3,6 +3,7 @@
 * Студент: [Daria Petrova](https://up.htmlacademy.ru/adaptive/14/user/637069).
 * Наставник: [Магомед Кандаев](https://up.htmlacademy.ru/htmlcss/20/user/161600).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
