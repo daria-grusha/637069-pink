@@ -1,7 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Daria Petrova](https://up.htmlacademy.ru/adaptive/14/user/637069).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://up.htmlacademy.ru/htmlcss/20/user/161600).
+
 
 ---
 
