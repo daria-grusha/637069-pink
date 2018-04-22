@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Приложение Пинк - мобильная версия</title>
+		<!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans+Narrow|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
+		<!--<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">-->
+	</head>
+	<body>
+		<header class="page-header">
+
+			<a class="page-header__logo">
+				<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+			</a>
+
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<div class="main-nav__wrapper">
+					<!--Нужно ли здесь описывать кнопку "Закрыть"?-->
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item">
+							<a href="#">Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Фотографии</a>
+						</li>
+						<li class="site-list__item">
+							<a>Конкурс</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Html academy</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--<p class="page-header__promo">Конкурс на самое безбашенное путешествие с Пинк</p>-->
+		</header>
+
+		<main class="form-page">
+			<h1 class="form-page__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+			<section class="user-info">
+				<div class="user-info__wrapper">
+					<h2 class="visually-hidden">Данные участника конкурса</h2>
+					<form class="user-info__form" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+							<legend></legend>
+							<div class="user-info__last-name">
+								<label for="last-name">Фамилия:</label>
+				        		<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию *" required />
+							</div>
+							<div class="user-info__first-name">
+								<label for="first-name">Имя:</label>
+				        		<input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required />
+							</div>
+							<div class="user-info__patronymic">
+								<label for="patronymic">Отчество:</label>
+				        		<input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" />
+							</div>
+						</fieldset>
+						<div class="user-info__user-achievements">
+							<!--<h2 class="user-info__crazy-achievements">Ваши безбашенные достижения в путешествии</h2>-->
+							<fieldset>
+								<legend>Ваши безбашенные достижения в путешествии</legend>
+								<ul class="user-info__list achievements-list">
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point1" name="point1" value="Сделал селфи с акулой" checked /><label for="point1">Сделал селфи с акулой</label><br>
+									</li>
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point2" name="point2" value="Обгорел на пляже" checked /><label for="point2">Обгорел на пяже</label><br>
+									</li>
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point3" name="point3" value="Видел Чака Норриса" /><label for="point3">Видел Чака Норриса</label><br>
+									</li>
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point4" name="point4" value="Накупил сувениров" /><label for="point4">Накупил сувениров</label><br>
+									</li>
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point5" name="point5" value="Удержал башню" checked /><label for="point5">Удержал башню</label><br>
+									</li>
+									<li class="achievements-list__item">
+										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="point6" name="point6" value="Разгромил отель" /><label for="point6">Разгромил отель</label><br>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+
+						<fieldset>
+							<legend></legend>
+							<div class="user-info__contacts user-contacts">
+								<label for="phone">Номер телефона</label>
+				        		<input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста" />
+							</div>
+							<div class="user-info__contacts user-contacts">
+								<label for="email">Адрес почты</label>
+				        		<input type="email" id="email" name="email" placeholder="Введите почту *" required />
+							</div>
+						</fieldset>
+						<div class="user-info__user-os">
+							<!--<h2 class="user-info__crazy-achievements">Ваши безбашенные достижения в путешествии</h2>-->
+							<fieldset>
+								<legend>С каким приложением вы путешествовали</legend>
+								<ul class="user-info__os os-list">
+									<li class="os-list__item">
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="r1" name="group1" value="1" checked /><label for="r1">Pink для iOS</label><br>
+									</li>
+									<li class="os-list__item">
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="r2" name="group1" value="2" /><label for="r2">Pink на Android</label>
+									</li>
+									<li class="os-list__item">
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" id="r3" name="group1" value="3" /><label for="r3">Windows phone</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+						<div class="user-info__msg message-text">
+							<fieldset>
+								<legend>Опишите свои эмоции</legend>
+								<textarea name="message" id="message" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+							</fieldset>
+						</div>
+						<input class="user-info__submit submit__btn" type="submit" value="Отправить форму">
+					</form>
+					<small class="user-info__footnote user-info__footnote--bottom">
+					<sup class="user-info__star">*</sup> — обязательные поля
+					</small>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="page-footer">
+			<a class="page-footer__logo">
+				<img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+			</a>
+			<div class="page-footer__social social">
+				<ul class="social__list social-links">
+					<li class="social-links__item"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+					<li class="social-links__item"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+					<li class="social-links__item"><a href="#"><span class="visually-hidden">Youtube</span></a></li>
+				</ul>
+			</div>
+			<p class="page-footer__developer">Разработано</p>
+			<a class="page-footer__developer-link" href="htmlacademy.ru">HTML academy<span class="visually-hidden"></span></a>
+		</footer>
+		<section class="modal-ok">
+			<h2 class="modal-ok__heading">Ваша заявка отправлена</h2>
+			<p class="modal-ok__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
+			<a class="modal-ok__btn btn--close" href="#">Закрыть окно</a>
+		</section>
+		<section class="modal-error">
+			<h2 class="modal-error__heading">Что-то пошло не так!</h2>
+			<p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+			<a class="modal-error__btn btn--close" href="#">Ок</a>
+		</section>
+	</body>
+</html>
